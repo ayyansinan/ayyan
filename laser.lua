@@ -1,5 +1,7 @@
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 
+local players = game:GetService("Players")
+
 local warn = ReplicatedStorage:WaitForChild("warn")
 
 -- a variable referencing to the laser model in the workspace

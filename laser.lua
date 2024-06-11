@@ -9,7 +9,7 @@ local laser = game.Workspace.laser
 
 local endpart = game.Workspace.endpart
 
-local raycastparms = Raycastparams.new()
+local raycastparams = Raycastparams.new()
 -- filters the descendants of the Instance the raycast has hit if the Instance the raycast has hit is the Instance in this table
 raycastparams.FilterDescendadentsInstance = {laser}
 

@@ -25,8 +25,15 @@ local debounce = true
 if result then
   local target = result.Instance
   if target.Parent:FindFirstChild("Humanoid") and debounce == true then
+    -- this will get the player from the character
+    local player = players:GetPlayerFromCharacter(target.Parent)
+
+    warn:FireClient(player)
+    
     debounce = false
     target.Parent.Humanoid.Health -= 10
     wait(1)
     debounce = true
 end
+
+
